@@ -1,0 +1,75 @@
+/* Estilos para el Cotizador de Pedidos - Panadería Trigal */
+:root {
+  --primary-color: #8B4513;       /* Marrón artesanal / pan tostado */
+  --primary-hover: #6d360f;
+  --secondary-color: #d97706;     /* Dorado cálido */
+  --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #faedd9 100%);
+  --card-radius: 0.9rem;
+}
+
+body {
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #2e2825;
+}
+
+.brand-header {
+  background: linear-gradient(135deg, #78350f 0%, #b45309 100%);
+  color: #ffffff;
+  border-top-left-radius: var(--card-radius) !important;
+  border-top-right-radius: var(--card-radius) !important;
+}
+
+.main-card {
+  border-radius: var(--card-radius);
+  border: none;
+  background-color: #ffffff;
+}
+
+.product-row {
+  border: 1px solid #e9ecef;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #fffdfa;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-row.selected {
+  border-color: #d97706;
+  background-color: #fff9ed;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.12);
+}
+
+.badge-price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #78350f;
+  background-color: #fef3c7;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+}
+
+.summary-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+}
+
+.total-highlight {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #78350f;
+}
+
+.btn-bakery {
+  background-color: #8B4513;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-bakery:hover, .btn-bakery:focus {
+  background-color: #6d360f;
+  color: #ffffff;
+}
